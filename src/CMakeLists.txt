@@ -45,6 +45,10 @@ add_executable(CycleSelect cycle_select.cpp)
 # 练习题: choose_girl.cpp
 add_executable(ChooseGirl choose_girl.cpp)
 
+# 练习题: int_to_string.cpp
+add_executable(Exercise10_IntToString 10_int_to_string.cpp)
+
+
 # --- 如何添加新的练习题 ---
 # 当你创建了一个新的练习题源文件，例如 "10_my_tenth_exercise.cpp"，
 # 你只需要在下面仿照以上格式添加一行新的 add_executable() 命令：

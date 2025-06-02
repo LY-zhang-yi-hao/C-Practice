@@ -48,14 +48,16 @@ add_executable(ChooseGirl choose_girl.cpp)
 # 练习题: int_to_string.cpp
 add_executable(Exercise10_IntToString 10_int_to_string.cpp)
 
+# 练习题13: strcat.cpp
+add_executable(Exercise13_Strcat 13_strcat.cpp)
 
-# --- 如何添加新的练习题 ---
-# 当你创建了一个新的练习题源文件，例如 "10_my_tenth_exercise.cpp"，
-# 你只需要在下面仿照以上格式添加一行新的 add_executable() 命令：
-#
-# add_executable(Exercise10_MyTenth 10_my_tenth_exercise.cpp)
-#
-# 确保 "Exercise10_MyTenth" 这个可执行文件名是唯一的。
+# 练习题14: strchr.cpp
+add_executable(Exercise14_Strchr 14_strchr.cpp)
+
+# 练习题15: strcmp.cpp
+add_executable(Exercise15_Strcmp 15_strcmp.cpp)
+
+
 
 # --- 关于目标属性 (可选高级用法) ---
 # 如果某个练习题需要特殊的编译选项、包含目录或链接库，你可以使用 target_* 系列命令:

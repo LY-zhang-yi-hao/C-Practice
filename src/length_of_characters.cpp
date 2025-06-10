@@ -1,14 +1,10 @@
 ﻿#include<iostream>
 #include<string>
 #include<cstring>
-#include<windows.h>
 
 using namespace std;
 
-void SetUTF8Console(){
-    SetConsoleCP(65001);
-    SetConsoleOutputCP(65001);
-}
+
 
 
 // 从界面上输入一个字符串（C 风格），计算字符串的长度。如果输入的是"abcde"，显示的结果是5。 
@@ -33,10 +29,8 @@ int my_strlen(char *ch) // char *ch 表示ch是一个指向字符串的指针
 }
 
 
-int main(){
-    SetUTF8Console();    
-    setlocale(LC_ALL, "zh_CN.UTF-8"); // 设置本地化，确保可以显示中文
-
+int main(){  
+ 
     char ch[100]; // 字符串数组，非指针
     memset(ch,0,sizeof(ch)); // 初始化数组
     cout << "请输入一个字符串："; cin >> ch;

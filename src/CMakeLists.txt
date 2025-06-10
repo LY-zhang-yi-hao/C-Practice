@@ -58,6 +58,8 @@ add_executable(Exercise14_Strchr 14_strchr.cpp)
 add_executable(Exercise15_Strcmp 15_strcmp.cpp)
 
 
+# 练习题17: delete_characters.cpp
+add_executable(Exercise17_DeleteCharacters 17_deletechr.cpp)
 
 # --- 关于目标属性 (可选高级用法) ---
 # 如果某个练习题需要特殊的编译选项、包含目录或链接库，你可以使用 target_* 系列命令:

@@ -5,11 +5,8 @@
 2）输出 1 到 100 之间（包括 1 和 100）的能整除 5 的数字。
 */
 #include <iostream>
-#include <windows.h>
-void SetUTF8Console(){
-    SetConsoleOutputCP(65001);
-    SetConsoleCP(65001);
-}
+#include <cstring>
+#include <string>
 using namespace std;
 
 

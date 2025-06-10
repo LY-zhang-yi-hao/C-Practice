@@ -1,19 +1,6 @@
 ﻿#include <iostream>
 using namespace std;
 
-//! 解决控制台输出中文乱码问题
-#include <windows.h>  // 引入Windows API
-// 在main函数开始前设置控制台代码页为UTF-8
-void setUTF8Console() {
-    SetConsoleOutputCP(65001);  // 设置输出代码页为UTF-8
-    SetConsoleCP(65001);        // 设置输入代码页为UTF-8
-}
-// SetConsoleOutputcp :Set Console Output Code Page 设置控制台输出代码页
-// SetConsoleCP :Set Console Input Code Page 设置控制台输入代码页
-// 65001 :UTF-8 代码页
-
-
-
 /*
 有两个任务： tn
 1）采用一个 while 循环，把 1 到 100 之间的数值累加起来。 

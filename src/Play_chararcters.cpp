@@ -1,11 +1,5 @@
 ﻿#include <iostream>
-#include <windows.h>
 using namespace std;
-
-void SetUTF8Console(){
-    SetConsoleOutputCP(65001);//Set Console OUTput Code Page 设置控制台输出页
-    SetConsoleCP(65001);
-}
 
 /* 要求：
 有三个任务： 
@@ -114,7 +108,7 @@ int toupper(int ch);    // 若 ch 是小写字母（'a'-'z'），则返回它的
     }
 
     int main(){
-        SetUTF8Console();
+
         char ch;
         cout << "请输入一个字符：";
         cin >> ch;

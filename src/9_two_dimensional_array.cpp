@@ -1,16 +1,9 @@
 ﻿#include <iostream>
-#include <windows.h>
-#include <io.h>
 #include <fcntl.h>
 
 using namespace std;
 
-void SetUTF8Console(){
-    SetConsoleCP(CP_UTF8);
-    SetConsoleOutputCP(CP_UTF8);
-    // 为了让 wcout 能正确输出 UTF-8
-    _setmode(_fileno(stdout), _O_U16TEXT);// 设置控制台输出为UTF-8
-}   
+  
 
 //有两个任务： 
 //1）超女有 3 个小组，每组有 4 名选手，请提供一个界面，输入每个超女的体重，然后，计算出每组的超女的平均体重和全部超女的平均体重。 
@@ -32,9 +25,6 @@ void biaobai(void *love(int),char *name){
 
 
 int main(){
-    SetUTF8Console();
-    // 注意：setlocale 对 wcout 可能效果不佳，SetUTF8Console 中的 _setmode 更关键
-    // setlocale(LC_ALL,"zh_CN.UTF-8"); 
 
     //1）超女有 3 个小组，每组有 4 名选手，请提供一个界面，输入每个超女的体重，然后，计算出每组的超女的平均体重和全部超女的平均体重。 
     int arr[3][4] = {0};

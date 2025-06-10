@@ -1,19 +1,12 @@
 ﻿#include <iostream>
 #include <string>
 #include <cstring>
-#include <windows.h>
-#include <io.h>
 #include <fcntl.h>
 #include <wchar.h>
 
 using namespace std;
 
-void SetUTF8Console(){
-    SetConsoleCP(CP_UTF8);
-    SetConsoleOutputCP(CP_UTF8);    
-    // _setmode(_fileno(stdout), _O_U16TEXT);// 设置控制台输出为UTF-16
-    // _setmode(_fileno(stdin), _O_U16TEXT); // 设置控制台输入为UTF-16 (配合 wcin)
-}
+
 
 // 从界面上输入一个 C 风格的字符串，如果输入的是"abc"，反转后"cba"。 
 // 要求： 
@@ -49,7 +42,7 @@ char* reverse_strin_1(char* str1){
 //? 调试时，别忘了 cin >> str1; 控制台输入字符串后，才能继续执行。
 
 int main(){
-    SetUTF8Console();
+
     char* str1 = new char[100];
     memset(str1,0,100);
     char* str2 = new char[100];

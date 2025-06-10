@@ -8,19 +8,13 @@
 
 #include <iostream>
 #include <string>
-#include <windows.h>
+#include <cstring>
+
 
 using namespace std;
 
-void SetUTF8Console(){
-    SetConsoleCP(CP_UTF8);
-    SetConsoleOutputCP(CP_UTF8);
-}
-
 
 int main(){
-    SetUTF8Console();
-    setlocale(LC_ALL,"zh_CN.UTF-8");
 
     char* str = new char[100]; // !动态分配内存.仓库🏬总共100格，你只放了 6 件东西，剩余 94 格是空的，但仓库总面积没变。
     memset(str,0,sizeof(str)); // 初始化
